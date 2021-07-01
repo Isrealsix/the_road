@@ -1,0 +1,25 @@
+.stories {
+	padding: 10rem 0;
+	position: relative;
+
+	&__box {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&-video {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		opacity: 0.4;
+
+		&--bg {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+}
