@@ -5,6 +5,11 @@
 	&__list {
 		display: flex;
 		justify-content: center;
+
+		@include respond(phone-land) {
+			flex-direction: column;
+			align-items: center;
+		}
 	}
 
 	&__link {
@@ -18,6 +23,15 @@
 		padding: 0.3rem 3rem;
 		background-color: var(--color-grey);
 		transition: all 0.3s;
+
+		@include respond(tab-port) {
+			padding: 0.3rem 2rem;
+			margin: 0 1rem;
+		}
+
+		@include respond(phone-land) {
+			margin: 1rem 0;
+		}
 
 		&:hover {
 			transform: rotate(-10deg);

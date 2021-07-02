@@ -3,6 +3,9 @@
 	position: relative;
 	perspective: 150rem;
 
+	@include respond(tablet) {
+		margin: 3rem 0;
+	}
 	&__front {
 		text-align: center;
 		background-color: var(--color-white);

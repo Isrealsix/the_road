@@ -6,4 +6,8 @@ html {
 	font-family: 'Vollkorn', serif;
 	font-size: 62.5%;
 	outline: none;
+
+	@include respond(tiny) {
+		font-size: 45%;
+	}
 }

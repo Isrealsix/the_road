@@ -8,6 +8,15 @@
 	box-shadow: 0 1rem 3rem #000;
 	padding: 5rem;
 
+	@include respond(phone-land) {
+		width: 90%;
+	}
+
+	@include respond(phone) {
+		padding: 2rem;
+		height: 40rem;
+	}
+
 	&__group {
 		width: 100%;
 		display: flex;

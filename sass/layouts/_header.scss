@@ -7,17 +7,37 @@
 	position: relative;
 	perspective: 100rem;
 
+	@include respond(phone) {
+		height: 100vh;
+	}
+
 	&-text {
 		text-align: center;
 		text-transform: uppercase;
 		letter-spacing: 0.1rem;
 		text-shadow: 0 0.3rem 0.5rem var(--color-grey);
+
+		@include respond(tab-port) {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			z-index: 10;
+		}
 	}
 
 	&__heading {
 		font-size: 8rem;
 		font-weight: 400;
 		color: var(--color-white);
+
+		@include respond(tab-port) {
+			font-size: 6rem;
+		}
+
+		@include respond(phone-land) {
+			font-size: 5rem;
+		}
 	}
 
 	&__paragraph {
@@ -26,6 +46,14 @@
 		color: var(--color-secondary);
 		max-width: 70rem;
 		margin: auto;
+
+		@include respond(tab-port) {
+			font-size: 2.5rem;
+		}
+
+		@include respond(phone-land) {
+			display: none;
+		}
 	}
 
 	&__logo {

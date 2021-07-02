@@ -3,4 +3,8 @@
 	margin: 3.5rem;
 	box-shadow: 0 1rem 3rem var(--color-grey);
 	overflow: hidden;
+
+	@include respond(phone) {
+		margin: 0;
+	}
 }

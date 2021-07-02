@@ -13,5 +13,9 @@
 		color: var(--color-white);
 		text-shadow: 0 1rem 2rem #000;
 		margin-bottom: 8rem;
+
+		@include respond(phone) {
+			font-size: 6rem;
+		}
 	}
 }

@@ -1,0 +1,45 @@
+// breakpoint manager
+
+// tablet 1200px -> 75em;
+// tab-port 1000px -> 62.5em
+// phone-land 800px -> 50em
+// phone      650px -> 40.625
+// tiny       500px -> 31.25em
+
+$tablet: 75em;
+$tab-port: 62.5em;
+$phone-land: 50em;
+$phone: 40.625em;
+$tiny: 31.25em;
+
+@mixin respond($breakpoint) {
+	@if ($breakpoint == tablet) {
+		@media only screen and (max-width: $tablet) {
+			@content;
+		}
+	}
+
+	@if ($breakpoint == tab-port) {
+		@media only screen and (max-width: $tab-port) {
+			@content;
+		}
+	}
+
+	@if ($breakpoint == phone-land) {
+		@media only screen and (max-width: $phone-land) {
+			@content;
+		}
+	}
+
+	@if ($breakpoint == phone) {
+		@media only screen and (max-width: $phone) {
+			@content;
+		}
+	}
+
+	@if ($breakpoint == tiny) {
+		@media only screen and (max-width: $tiny) {
+			@content;
+		}
+	}
+}
