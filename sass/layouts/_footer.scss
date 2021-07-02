@@ -1,0 +1,35 @@
+.footer {
+	background-color: var(--color-grey);
+	padding: 4rem 0 2rem 0;
+
+	&__list {
+		display: flex;
+		justify-content: center;
+	}
+
+	&__link {
+		font-size: 2rem;
+		color: var(--color-white);
+		letter-spacing: 0.3rem;
+	}
+
+	&__item {
+		margin: 0 2rem;
+		padding: 0.3rem 3rem;
+		background-color: var(--color-grey);
+		transition: all 0.3s;
+
+		&:hover {
+			transform: rotate(-10deg);
+			box-shadow: 0 2rem 3rem #000;
+		}
+	}
+
+	&__paragraph {
+		font-size: 1.5rem;
+		text-align: center;
+		color: var(--color-secondary);
+		letter-spacing: 0.2rem;
+		margin-top: 5rem;
+	}
+}
